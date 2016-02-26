@@ -9,9 +9,11 @@ def post_list(request):
     posts = Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
     return render(request, 'csi/post_list.html', {'posts': posts})
 
+
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'csi/post_detail.html', {'post': post})
+
 
 def post_new(request):
     if request.method == "POST":
@@ -21,10 +23,11 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('csi.views.post_detail', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'csi/post_edit.html', {'form': form})
+
 
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -35,7 +38,21 @@ def post_edit(request, pk):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
+            return redirect('csi.views.post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
     return render(request, 'csi/post_edit.html', {'form': form})
+
+
+def new_report(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            return redirect('/', pk=post.pk)
+    else:
+        form = ReparacionForm()
+    return render(request, 'csi/new_post.html', {'form': form})
+
+
