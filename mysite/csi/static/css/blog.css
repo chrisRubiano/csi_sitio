@@ -1,13 +1,14 @@
 h1 a {
-    color: #FCA205;
+    color: #332532;
     font-family: 'Lobster';
 }
+
 p{
     font-family: 'Roboto', sans-serif;
 }
 
 .page-header {
-    background-color: #E74C3C;
+    background-color: #332532;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }

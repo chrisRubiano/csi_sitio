@@ -6,4 +6,3 @@ from .models import Post
 class PostForm(forms.Form):
     title = forms.CharField()
     content = forms.CharField(widget=MarkdownWidget())
-    #content2 = MarkdownFormField()
