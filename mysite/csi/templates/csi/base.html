@@ -7,17 +7,15 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static "css/blog.css" %}">
         <link rel="stylesheet" href="{% static "django_markdown/preview.css" %}">
-        <link rel="stylesheet" href="{% static "django_markdown/preview.css" %}">
+        <link rel="stylesheet" href="{% static "material/dist/css/bootstrap-material-design.css" %}">
+        <link rel="stylesheet" href="{% static "material/dist/css/ripples.css" %}">
+
     </head>
     <body>
-        <body>
-        <div class="page-header">
-            {% if user.is_authenticated %}
-            <a href="{% url "post_new" %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            {% endif %}
+        <div class="container">
             <h1><a href="/">CSI Blog</a></h1>
+            <button class="btn btn-lg btn-block btn-raised">deste</button>
         </div>
         <div class="content container">
             <div class="row">
@@ -27,6 +25,9 @@
                 </div>
             </div>
         </div>
-    </body>
+        <script type="text/javascript" src="{% static "django_markdown/jquery.init.js" %}"></script>
+        <script type="text/javascript" src="{% static "django_markdown/jquery.markitup.js" %}"></script>
+        <script type="text/javascript" src="{% static "material/dist/js/material.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "material/dist/js/ripples.min.js" %}"></script>
     </body>
 </html>
