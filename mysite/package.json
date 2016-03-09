@@ -1,0 +1,10 @@
+{
+  "name": "csi-sitio",
+  "version": "1.0.0",
+  "description": "sitio web del csi, con waifus",
+  "author": "Cristian Samaniego <chris.rubiano42@gmail.com>",
+  "license": "GNU",
+  "dependencies": {
+    "bootstrap-material-design": "",
+  },
+}
