@@ -1,1 +1,23 @@
 
+nav{
+	background-color: #42213c;
+}
+
+.post h1, .post h1 a, .post h1 a:visited {
+    color: #674d62;
+    text-decoration: none;
+}
+
+.post h1 a:hover{
+	color: #857081;
+}
+
+.date {
+	font-size: 18px;
+    float: right;
+    color: #828282;
+}
+
+.content{
+	font-family: 'Roboto', sans-serif;
+}
