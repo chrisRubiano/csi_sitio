@@ -14,13 +14,14 @@
         <!-- Bootstrap CDN -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-        <!-- Bootstrap Material CDN-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.9/css/bootstrap-material-design.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.9/css/ripples.css">
+        <!-- Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
         <!-- Fonts -->
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300' rel='stylesheet' type='text/css'>
 
         <!-- Django Markdown CSS -->
         <link rel="stylesheet" href="{% static "django_markdown/preview.css" %}">
@@ -28,77 +29,29 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{% static "css/custom.css" %}">
 
-        <!-- Dropdown.js -->
-        <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
 
          <!-- jQuery -->
         <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.js"></script>
 
     </head>
     <body>
-
-    <div class="navbar navbar-default">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="javascript:void(0)">Brand</a>
-                </div>
-                <div class="navbar-collapse collapse navbar-responsive-collapse">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="javascript:void(0)">Active</a></li>
-                    <li><a href="javascript:void(0)">Link</a></li>
-                    <li class="dropdown">
-                      <a href="http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
-                        <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="javascript:void(0)">Action</a></li>
-                        <li><a href="javascript:void(0)">Another action</a></li>
-                        <li><a href="javascript:void(0)">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Dropdown header</li>
-                        <li><a href="javascript:void(0)">Separated link</a></li>
-                        <li><a href="javascript:void(0)">One more separated link</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                      <input type="text" class="form-control col-sm-8" placeholder="Search">
-                    </div>
-                  </form>
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="javascript:void(0)">Link</a></li>
-                    <li class="dropdown">
-                      <a href="http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
-                        <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="javascript:void(0)">Action</a></li>
-                        <li><a href="javascript:void(0)">Another action</a></li>
-                        <li><a href="javascript:void(0)">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="javascript:void(0)">Separated link</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+          <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"> CSI-PRO</a>
+              <ul id="nav-mobile" class="right">
+                <li><a href="">Blog</a></li>
+              </ul>
             </div>
-        <div class="container">
-            <h1><a href="/">CSI Blog</a></h1>
-            <button class="btn btn-lg btn-block btn-raised">deste</button>
-        </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                {% block content %}
-                {% endblock %}
+          </nav>
+          <div class="content container">
+              <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    {% block content %}
+                    {% endblock %}
+                  </div>
                 </div>
             </div>
-        </div>
         <script type="text/javascript" src="{% static "django_markdown/jquery.init.js" %}"></script>
         <script type="text/javascript" src="{% static "django_markdown/jquery.markitup.js" %}"></script>
     </body>

@@ -5,6 +5,10 @@ from django.shortcuts import redirect
 from .forms import PostForm
 
 
+def index(request):
+    return render(request, 'csi/index.html', {})
+
+
 def post_list(request):
     posts = Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
     return render(request, 'csi/post_list.html', {'posts': posts})
