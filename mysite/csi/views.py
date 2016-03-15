@@ -3,6 +3,7 @@ from django.utils import timezone
 from .models import Post
 from django.shortcuts import redirect
 from .forms import PostForm
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def index(request):
@@ -11,6 +12,18 @@ def index(request):
 
 def post_list(request):
     posts = Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
+    paginator = Paginator(posts, 3)
+
+    page = request.GET.get('page')
+    try:
+        page_posts = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        page_posts = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        page_posts = paginator.page(paginator.num_pages)
+
     return render(request, 'csi/post_list.html', {'posts': posts})
 
 

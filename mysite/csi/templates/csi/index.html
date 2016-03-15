@@ -3,6 +3,7 @@
 
 
 {% block content %}
+{% load staticfiles %}
 <header>
         <div class="container parallax-container">
             <div class="intro-text">
@@ -12,8 +13,30 @@
         </div>
 </header>
 <div class="container">
-	<h3>Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest mountain?</h3>
-	<h3>We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically.</h3>
+	<h4>Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest mountain?</h4>
+	<h4>We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically.</h4>
 	<h4>The path of a cosmonaut is not an easy, triumphant march to glory. You have to get to know the meaning not just of joy but also of grief, before being allowed in the spacecraft cabin.</h4>
+</div>
+<div class="row">
+	<div class="col m8 l4 hoverable">
+		<div class="row">
+			<img class="circle responsive-img quote-picture center-align" src="{% static "img/dross.jpg" %}">	
+		</div>
+		<div class="row">
+			<h5 class="">"bizarro en el sentido anglosajon de la palabra"</h5>
+			<p class="right-align">-dross</p>
+		</div>
+	</div>
+	<div class="col m8 l4 hoverable">
+		<span><img class="circle responsive-img quote-picture" src="{% static "img/dross2.jpg" %}"></span>
+		<h5 class="">"Perturbador..."</h5>
+		<p class="right-align">-tress</p>
+	</div>
+	<div class="col m8 l4 hoverable">
+		<span><img class="circle responsive-img quote-picture" src="{% static "img/platon.jpg" %}"></span>
+		<h5 class="">"pues nosotros que acabamos de entrar creiamos que trabajar solos era lo mejor, pero ahora pensamos que trabajar en equipo es lo mejor, por que CSI no es un grupo ordinario"</h5>
+		<p class="right-align">-Platon</p>
+	</div>
+
 </div>
 {% endblock content %}
