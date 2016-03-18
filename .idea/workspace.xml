@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0030d8e-9bd6-4a01-9632-c3a21bf0c7ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/csi/static/css/custom.css" afterPath="$PROJECT_DIR$/mysite/csi/static/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/csi/templates/csi/index.html" afterPath="$PROJECT_DIR$/mysite/csi/templates/csi/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/csi/views.py" afterPath="$PROJECT_DIR$/mysite/csi/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/custom.css" afterPath="$PROJECT_DIR$/mysite/static/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/django_markdown/preview.css" afterPath="$PROJECT_DIR$/mysite/static/django_markdown/preview.css" />
-    </list>
+    <list default="true" id="d0030d8e-9bd6-4a01-9632-c3a21bf0c7ee" name="Default" comment="" />
     <ignored path="csi_sitio.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -197,7 +190,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/weasPython" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
