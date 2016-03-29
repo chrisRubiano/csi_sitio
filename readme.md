@@ -1,13 +1,13 @@
 #####TODO:
 ****************
-	+ Landing Page
+	* Landing Page
 		- kesebea vonitho
-	+ Blog
+	* Blog
 		- Paginator
-	+ Galeria de fotos
-	+ Calendario de eventos
-	+ Proyectos en curso
-	+ Proyectos hechos
+	* Galeria de fotos
+	* Calendario de eventos
+	* Proyectos en curso
+	* Proyectos hechos
 		- Quienes participaron
-	+ Historia de CSI(?)
-	+ Miembros y perfiles de contacto (twitter, etc)
+	* Historia de CSI(?)
+	* Miembros y perfiles de contacto (twitter, etc)
