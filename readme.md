@@ -1,5 +1,5 @@
+**********************
 #####TODO:
-****************
 * Landing Page
 	- kesebea vonitho
 * Blog
@@ -11,3 +11,4 @@
 	- Quienes participaron
 * Historia de CSI(?)
 * Miembros y perfiles de contacto (twitter, etc)
+***********************
