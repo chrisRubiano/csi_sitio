@@ -13,7 +13,7 @@
 	            <h1><a href="{% url "csi.views.post_detail" pk=post.pk %}">{{ post.title }}</a></h1>
 	            <p>{{ post.content|markdown }}</p>
 	        </div>
-		{% endfor %}  
+		    {% endfor %}  
       </div>
     </div>
     <div class="row">

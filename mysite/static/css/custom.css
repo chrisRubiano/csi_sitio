@@ -12,8 +12,12 @@ nav{
 	color: #857081;
 }
 
-.quote-picture{
-    max-width: 100px;
+img.quote-picture{
+    max-width: 150px;
+}
+
+p.right-align{
+    padding-right: 20px;
 }
 
 .date {
