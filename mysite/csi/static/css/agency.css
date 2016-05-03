@@ -3,6 +3,19 @@ body {
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.author{
+    color: #FF974F;
+}
+
+pre{
+    border-color: #242424;
+    background-color: #242424;
+}
+
+.content{
+    margin-top: 100px;
+}
+
 .text-muted {
     color: #777;
 }
@@ -164,7 +177,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default {
-    background-color: #222;
+    background-color: #452e41;
     border-color: transparent;
 }
 
@@ -243,7 +256,7 @@ fieldset[disabled] .btn-xl.active {
         border-radius: 3px;
     }
     .navbar-default.navbar-shrink {
-        background-color: #222;
+        background-color: #452e41;
         padding: 10px 0;
     }
     .navbar-default.navbar-shrink .navbar-brand {
@@ -627,7 +640,7 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
+    background-color: #102c34;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;

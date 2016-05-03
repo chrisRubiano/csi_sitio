@@ -8,6 +8,10 @@ nav{
     text-decoration: none;
 }
 
+.author{
+    color: #FF974F;
+}
+
 .post h1 a:hover{
 	color: #857081;
 }
