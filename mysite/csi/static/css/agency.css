@@ -720,6 +720,15 @@ footer ul.quicklinks {
     text-transform: none;
 }
 
+.caret-up {
+    margin-top: -12px;
+    margin-bottom: 2px;
+}
+.back-to-top {
+    font-size: 0.8em;
+    margin-top: -12px;
+}
+
 ul.social-buttons {
     margin-bottom: 0;
 }
