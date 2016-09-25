@@ -12,7 +12,7 @@ def index(request):
 
 def post_list(request):
     posts_list = Post.objects.filter(created_date__lte=timezone.now()).order_by('-created_date')
-    paginator = Paginator(posts_list, 3)
+    paginator = Paginator(posts_list, 6)
 
     page = request.GET.get('page')
     try:

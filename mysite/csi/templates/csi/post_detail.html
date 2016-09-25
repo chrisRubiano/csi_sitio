@@ -3,12 +3,18 @@
 
 {% block content %}
     <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
+        <div class="col-md-8 col-md-offset-2">
+          <h1>{{ post.title }}</h1>
+        </div>
+        <div class="col-md-2 col-md-offset-3">
+          {% if post.published_date %}
+            <div class="date text-center">
+                <i class="fa fa-fh fa-calendar"></i> {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.content|markdown }}</p>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+          <p>{{ post.content|markdown }}</p>
+        </div>
     </div>
 {% endblock %}
