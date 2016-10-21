@@ -1,15 +1,5 @@
-**********************
-#####TODO:
-* Landing Page
-	- kesebea vonitho
-* Blog
-	- Paginator
-* Galeria de fotos
-* Calendario de eventos
-* Proyectos en curso
-* Proyectos hechos
-	- Quienes participaron
-* Historia de CSI(?)
-* Miembros y perfiles de contacto (twitter, etc)
-
-***********************
+###Sitio web creado utilizando Django para el backend del blog
+ Para poder correrlo es necesario instalar (de preferencia con pip) las siguientes librerias
+ + Django 1.9 (pip install django==1.9)
+ + Django Markdown (pip install django_markdown)
+ + Pygments (pip install pygments)
